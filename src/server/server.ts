@@ -36,6 +36,7 @@ export const createServer = (
   );
 
   app.get("/:userPoolId/.well-known/jwks.json", (req, res) => {
+    console.log('hit "/:userPoolId/.well-known/jwks.json"');
     res.status(200).json({
       keys: [PublicKey.jwk],
     });
