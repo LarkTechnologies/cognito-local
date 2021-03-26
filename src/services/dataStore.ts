@@ -30,6 +30,7 @@ export const createDataStore: CreateDataStore = async (
   const db = new StormDB(engine);
 
   db.default(defaults);
+  await db.save();
 
   return {
     async getRoot() {
@@ -47,6 +48,7 @@ export const createDataStore: CreateDataStore = async (
     },
 
     async set(key, value) {
+      key = Array.isArray(key) ? key.join(".") : key;
       await db.set(key, value).save();
     },
   };
