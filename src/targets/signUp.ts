@@ -37,8 +37,15 @@ export const SignUp = ({
     throw new UsernameExistsError();
   }
 
+  console.log("userPool", JSON.stringify(userPool));
+  const attributes = body.UserAttributes.map((v) => v);
+
+  if (userPool.config.UsernameAttributes?.includes("email")) {
+    attributes.push({ Name: "email", Value: body.Username });
+  }
+
   const user: User = {
-    Attributes: body.UserAttributes,
+    Attributes: attributes,
     Enabled: true,
     Password: body.Password,
     UserCreateDate: new Date().getTime(),

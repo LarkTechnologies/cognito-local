@@ -10,8 +10,7 @@
   "UserPoolDefaults": {
     "Id": "local",
     "UsernameAttributes": [
-      "email",
-      ""
+      "email"
     ]
   }
 }
