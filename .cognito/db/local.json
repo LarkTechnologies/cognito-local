@@ -1,0 +1,12 @@
+{
+  "Users": {
+  },
+  "Options": {
+    "Id": "local",
+    "UsernameAttributes": [
+      "email",
+      "custom:larkId",
+      "custom:larkUUID"
+    ]
+  }
+}

@@ -27,6 +27,7 @@ export const SignUp = ({
   cognitoClient,
   codeDelivery,
 }: Services): SignUpTarget => async (body) => {
+  console.log("SignUp", body);
   // TODO: This should behave differently depending on if PreventUserExistenceErrors
   // is enabled on the user pool. This will be the default after Feb 2020.
   // See: https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-user-pool-managing-errors.html

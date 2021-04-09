@@ -1,0 +1,13 @@
+{
+  "Clients": {
+    "ecghxdb1d6tqbm028y7fvawx4": {
+      "ClientId": "ecghxdb1d6tqbm028y7fvawx4",
+      "ClientName": "local",
+      "UserPoolId": "local",
+      "CreationDate": 1616615745346,
+      "LastModifiedDate": 1616615745346,
+      "AllowedOAuthFlowsUserPoolClient": false,
+      "RefreshTokenValidity": 30
+    }
+  }
+}
