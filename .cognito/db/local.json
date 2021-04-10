@@ -1,0 +1,10 @@
+{
+  "Users": {
+  },
+  "Options": {
+    "Id": "local",
+    "UsernameAttributes": [
+      "email"
+    ]
+  }
+}
